@@ -98,11 +98,28 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              'ตรวจสอบจำนวนตัวเลข ค่าใดมีค่าน้อยที่สุด',
+              style: TextStyle(fontSize: 22),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+            const SizedBox(height: 40),
+            RaisedButton(
+              onPressed: () {},
+              color: Colors.blue,
+              child: const Text('148',
+                  style: TextStyle(fontSize: 20, color: Colors.white)),
+            ),
+            RaisedButton(
+              onPressed: () {},
+              color: Colors.blue,
+              child: const Text('325',
+                  style: TextStyle(fontSize: 20, color: Colors.white)),
+            ),
+            const SizedBox(height: 40),
+            RaisedButton(
+              onPressed: () {},
+              color: Colors.blue,
+              child: const Text('กดเพื่อตรวจสอบ',
+                  style: TextStyle(fontSize: 20, color: Colors.white)),
             ),
           ],
         ),
@@ -110,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: Icon(Icons.add),
+        child: Icon(Icons.skip_next_outlined),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
